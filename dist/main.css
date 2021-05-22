@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+.container {
+  width: 60%;
+  height: 6000px;
+}
+
 body {
   font-family: "Share Tech Mono", monospace;
 }
@@ -91,8 +96,14 @@ header {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #4703A6;
-  margin-top: 30px;
+  height: 60px;
   padding: 0 80px;
+  position: fixed;
+  width: 100%;
+  background-color: #34383e;
+  align-items: center;
+  -webkit-animation: dropdown 1s ease;
+          animation: dropdown 1s ease;
 }
 header span {
   display: flex;
@@ -128,6 +139,24 @@ header ul li i {
   color: #4703A6;
 }
 
+@-webkit-keyframes dropdown {
+  0% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.aboutme__txt {
+  padding: 200px;
+  color: #EEEEEE;
+  font-size: 30px;
+}
+.aboutme__txt span {
+  color: #4703A6;
+  display: block;
+  margin-bottom: 20px;
+}
 header {
   display: none;
 }

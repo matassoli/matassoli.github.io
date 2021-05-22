@@ -1,0 +1,13 @@
+.aboutme__txt {
+  padding: 200px;
+  color: $secondary;
+  font-size: 30px;
+
+  span {
+    color: $primary;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  p:first-child {}
+}
