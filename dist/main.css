@@ -124,16 +124,41 @@ header ul li {
   padding: 0 20px 5px 0;
 }
 header ul li a {
-  background: linear-gradient(to right, #4703A6, #4703A6 50%, #EEEEEE 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
-  background-position: 100%;
-  transition: background-position 0.3s ease;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  color: #EEEEEE;
 }
 header ul li a:hover {
   background-position: 0 100%;
+}
+header ul li a:after,
+header ul li a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #4703A6;
+}
+header ul li a:before {
+  left: -2.5px;
+}
+header ul li a:after {
+  right: 2.5px;
+  background: #4703A6;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+header ul li a:hover:before {
+  background: #4703A6;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+header ul li a:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
 }
 header ul li i {
   font-size: 14px;

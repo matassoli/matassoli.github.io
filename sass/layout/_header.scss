@@ -28,17 +28,47 @@ header {
       padding: 0 20px 5px 0;
 
       a {
-        background: linear-gradient(to right, $primary, $primary 50%, $secondary 50%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 200% 100%;
-        background-position: 100%;
-        transition: background-position 0.3s ease;
+        position: relative;
+        display: block;
+        cursor: pointer;
+        color: $secondary;
       }
 
       a:hover {
         background-position: 0 100%;
+      }
+
+      a:after,
+      a:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        top: 50%;
+        margin-top: -0.5px;
+        background: $primary;
+      }
+
+      a:before {
+        left: -2.5px;
+      }
+
+      a:after {
+        right: 2.5px;
+        background: $primary;
+        transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+
+      a:hover:before {
+        background: $primary;
+        width: 100%;
+        transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+
+      a:hover:after {
+        background: transparent;
+        width: 100%;
+        transition: 0s;
       }
 
       i {
