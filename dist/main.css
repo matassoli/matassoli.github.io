@@ -237,6 +237,13 @@ header ul li i {
 }
 .aboutme__icons i {
   font-size: 35px;
+  opacity: 0.3;
+}
+.aboutme__icons i:hover {
+  opacity: 1;
+  cursor: pointer;
+  color: #4703A6;
+  transform: scale(1.2);
 }
 
 header {
