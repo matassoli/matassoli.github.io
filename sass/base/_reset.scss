@@ -10,3 +10,14 @@
   color: $secondary;
   flex-direction: column;
 }
+
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 80%;
+  }
+  .aboutme__icons::after {
+    content: "";
+    flex: auto;
+  }
+}

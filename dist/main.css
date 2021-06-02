@@ -11,6 +11,16 @@
   flex-direction: column;
 }
 
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 80%;
+  }
+
+  .aboutme__icons::after {
+    content: "";
+    flex: auto;
+  }
+}
 body {
   font-family: "Share Tech Mono", monospace;
 }
@@ -175,7 +185,12 @@ header ul li i {
   }
 }
 .aboutme__title {
-  padding: 200px 400px 80px 0;
+  margin: 100px 0;
+  width: 60%;
+}
+.aboutme__title .aboutme__title--special {
+  display: inline;
+  white-space: nowrap;
 }
 .aboutme__title h1 {
   color: #4703A6;
@@ -259,10 +274,12 @@ header ul li i {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: auto;
 }
 .aboutme__icons i {
   font-size: 35px;
   opacity: 0.3;
+  margin: 5px 10px;
 }
 .aboutme__icons i:hover {
   opacity: 1;
