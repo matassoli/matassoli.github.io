@@ -1,17 +1,16 @@
 .aboutme__title {
-  padding: 150px;
+  padding: 200px 400px 80px 0;
 
   h1 {
     color: $primary;
     display: block;
     margin-bottom: 10px;
-    font-weight: bold;
     font-size: 40px;
   }
 
   h2 {
-    color: $secondary;
     font-size: 40px;
+    font-weight: 400;
   }
 
   span {
@@ -22,6 +21,12 @@
 
   span:hover {
     animation-name: rubberBand;
+  }
+}
+
+.aboutme__txt {
+  a {
+    color: $primary;
   }
 }
 @keyframes rubberBand {
@@ -53,5 +58,16 @@
   to {
     transform: scale3d(1, 1, 1);
     color: $secondary;
+  }
+}
+
+.aboutme__icons {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  i {
+    font-size: 35px;
   }
 }

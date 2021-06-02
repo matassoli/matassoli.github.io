@@ -6,5 +6,7 @@
 
 .container {
   width: 60%;
-  height: 6000px;
+  margin: auto;
+  color: $secondary;
+  flex-direction: column;
 }
