@@ -69,5 +69,12 @@
 
   i {
     font-size: 35px;
+    opacity: 0.3;
+  }
+  i:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: $primary;
+     transform: scale(1.2);
   }
 }
