@@ -6,7 +6,9 @@
 
 .container {
   width: 60%;
-  height: 6000px;
+  margin: auto;
+  color: #EEEEEE;
+  flex-direction: column;
 }
 
 body {
@@ -148,18 +150,17 @@ header ul li i {
   }
 }
 .aboutme__title {
-  padding: 150px;
+  padding: 200px 400px 80px 0;
 }
 .aboutme__title h1 {
   color: #4703A6;
   display: block;
   margin-bottom: 10px;
-  font-weight: bold;
   font-size: 40px;
 }
 .aboutme__title h2 {
-  color: #EEEEEE;
   font-size: 40px;
+  font-weight: 400;
 }
 .aboutme__title span {
   display: inline-block;
@@ -171,6 +172,10 @@ header ul li i {
 .aboutme__title span:hover {
   -webkit-animation-name: rubberBand;
           animation-name: rubberBand;
+}
+
+.aboutme__txt a {
+  color: #4703A6;
 }
 
 @-webkit-keyframes rubberBand {
@@ -224,10 +229,24 @@ header ul li i {
     color: #EEEEEE;
   }
 }
+.aboutme__icons {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.aboutme__icons i {
+  font-size: 35px;
+}
+
 header {
   display: none;
 }
 
 body {
   background-color: #17191d;
+}
+
+.wip {
+  margin-top: 150px;
 }
