@@ -30,6 +30,7 @@ body g {
 
 a {
   text-decoration: none;
+  color: #EEEEEE;
 }
 
 .logo__wrapper {
@@ -215,7 +216,7 @@ header ul li i {
 }
 
 .aboutme__txt a {
-  color: #4703A6;
+  color: #28a745;
 }
 
 @-webkit-keyframes rubberBand {
