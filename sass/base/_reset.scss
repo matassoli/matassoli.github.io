@@ -11,6 +11,17 @@
   flex-direction: column;
 }
 
+header {
+  display: none;
+}
+
+body {
+  background-color: $background;
+}
+
+.wip {
+  margin-top: 150px;
+}
 
 @media only screen and (max-width: 1000px) {
   .container {

@@ -11,6 +11,18 @@
   flex-direction: column;
 }
 
+header {
+  display: none;
+}
+
+body {
+  background-color: #17191d;
+}
+
+.wip {
+  margin-top: 150px;
+}
+
 @media only screen and (max-width: 1000px) {
   .container {
     width: 80%;
@@ -186,10 +198,10 @@ header ul li i {
   }
 }
 .aboutme__title {
-  margin: 100px 0;
+  margin: 150px 0 50px;
   width: 60%;
 }
-.aboutme__title .aboutme__title--special {
+.aboutme__title--special {
   display: inline;
   white-space: nowrap;
 }
@@ -214,11 +226,12 @@ header ul li i {
   -webkit-animation-name: rubberBand;
           animation-name: rubberBand;
 }
-
+.aboutme__txt {
+  margin-bottom: 0px;
+}
 .aboutme__txt a {
   color: #28a745;
 }
-
 @-webkit-keyframes rubberBand {
   from {
     transform: scale3d(1, 1, 1);
@@ -244,7 +257,6 @@ header ul li i {
     color: #EEEEEE;
   }
 }
-
 @keyframes rubberBand {
   from {
     transform: scale3d(1, 1, 1);
@@ -271,7 +283,7 @@ header ul li i {
   }
 }
 .aboutme__icons {
-  padding: 20px 0;
+  padding: 50px 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -289,14 +301,16 @@ header ul li i {
   transform: scale(1.2);
 }
 
-header {
-  display: none;
+.projects {
+  text-align: center;
 }
-
-body {
-  background-color: #17191d;
+.projects h2 {
+  margin: 30px 0;
 }
-
-.wip {
-  margin-top: 150px;
+.projects .square {
+  width: 280px;
+  aspect-ratio: 1;
+  background-color: red;
+  display: inline-block;
+  margin: 5px;
 }
