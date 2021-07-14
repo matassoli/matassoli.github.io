@@ -9,12 +9,13 @@ header {
   background-color: $background300;
   align-items: center;
   animation: dropdown 1s ease;
+  z-index: 3;
 
   span {
     display: flex;
     margin: 0 20px;
     color: $secondary;
-    font-family: 'Major Mono Display', monospace;
+    font-family: "Major Mono Display", monospace;
     font-size: 20px;
   }
 
@@ -40,7 +41,7 @@ header {
 
       a:after,
       a:before {
-        content: '';
+        content: "";
         position: absolute;
         width: 0;
         height: 2px;
@@ -79,7 +80,7 @@ header {
     }
   }
 }
-@-webkit-keyframes dropdown {
+@keyframes dropdown {
   0% {
     transform: translateY(-60px);
   }
