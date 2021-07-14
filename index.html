@@ -1,159 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="dist/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
-      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <title>Nicolò Matassoli</title>
-  </head>
 
-  <body>
-    <div id="vue__wrap">
-      <div
-        id="logo"
-        class="logo__wrapper"
-        v-bind:class="{visible : isVisible, hidden : isHidden}"
-      >
-        <div class="logo">
-          <svg
-            id="hexagon"
-            viewbox="0 0 100 100"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <g>
-              <g
-                id="M"
-                transform="translate(36, 33)"
-                fill="#4703A6"
-                style="opacity: 0"
-                font-size="50"
-                font-weight="400"
-                letter-spacing="4.16666603"
-              >
-                <text>
-                  <tspan x="-5" y="33">M</tspan>
-                </text>
-              </g>
-              <path
-                stroke="#4703A6"
-                stroke-width="5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M 50, 5
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="dist/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet" />
+  <title>Nicolò Matassoli</title>
+</head>
+
+<body>
+  <div id="vue__wrap">
+    <div id="logo" class="logo__wrapper" v-bind:class="{visible : isVisible, hidden : isHidden}">
+      <div class="logo">
+        <svg id="hexagon" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g>
+            <g id="M" transform="translate(36, 33)" fill="#4703A6" style="opacity: 0" font-size="50" font-weight="400"
+              letter-spacing="4.16666603">
+              <text>
+                <tspan x="-5" y="33">M</tspan>
+              </text>
+            </g>
+            <path stroke="#4703A6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" d="M 50, 5
          L 11, 27
          L 11, 72
          L 50, 95
          L 89, 73
-         L 89, 28 z"
-              />
-            </g>
-          </svg>
-        </div>
+         L 89, 28 z" />
+          </g>
+        </svg>
       </div>
-
-      <header v-bind:class="{hidden : isVisible, visible : isHidden}">
-        <span>Matassoli</span>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="#aboutme">About Me</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contacts</a></li>
-        </ul>
-      </header>
-      <main
-        class="container"
-        v-bind:class="{hidden : isVisible, visible : isHidden}"
-      >
-        <section class="aboutme" id="aboutme">
-          <div class="aboutme__title">
-            <h1>
-              <div class="aboutme__title--special">
-                <span>H</span><span>e</span><span>l</span><span>l</span
-                ><span>o</span><span>,</span>
-              </div>
-              <div class="aboutme__title--special">
-                <span>m</span><span>y</span>
-              </div>
-              <div class="aboutme__title--special">
-                <span>n</span><span>a</span><span>m</span><span>e</span>
-              </div>
-              <div class="aboutme__title--special">
-                <span>i</span><span>s</span>
-              </div>
-            </h1>
-            <h2>Nicolò e sono un Junior Full Stack Web Developer.</h2>
-          </div>
-
-          <div class="aboutme__txt">
-            <p>
-              Interessato da sempre a tutto ciò che gravita attorno al mondo del
-              computer, ho deciso finalmente di seguire la mia passione ed
-              addentrarmi concretamente nel settore della programmazione
-              frequentando il corso
-              <a href="https://www.boolean.careers" target="_blank"
-                >Boolean Careers</a
-              >
-              e rimanendone affascinato.<br />
-              I miei obiettivi a breve termine sono iniziare a lavorare nel
-              settore e formarmi ulteriormente, esplorando quelle tecnologie che
-              non ho ancora avuto modo di approfondire.
-            </p>
-          </div>
-          <div class="aboutme__icons">
-            <i class="fab fa-html5" title="HTML5"></i>
-            <i class="fab fa-css3-alt" title="CSS3"></i>
-            <i class="fab fa-js-square" title="JavaScript"></i>
-            <i class="fab fa-php" title="PHP"></i>
-            <i class="fab fa-laravel" title="Laravel"></i>
-            <i class="fab fa-sass" title="Sass"></i>
-            <i class="fab fa-bootstrap" title="Bootstrap"></i>
-            <i class="fab fa-vuejs" title="Vue.js"></i>
-            <i class="icon-mysql" title="MySQL"></i>
-            <i class="fab fa-github" title="GitHub"></i>
-            <i class="fab fa-gitkraken" title="GitKraken"></i>
-            <i class="fab fa-google-drive" title="Google Drive"></i>
-          </div>
-        </section>
-
-        <section class="projects" id="projects">
-          <h2>Projects</h2>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-        </section>
-
-        <section>
-          <a href="mailto:nico.matassoli@gmail.com">Email</a>
-        </section>
-      </main>
-
-      <footer></footer>
     </div>
 
-    <script src="js/myscript.js" charset="utf-8"></script>
-  </body>
+    <header v-bind:class="{hidden : isVisible, visible : isHidden}">
+      <span>Matassoli</span>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="">Contacts</a></li>
+      </ul>
+    </header>
+    <main class="container" v-bind:class="{hidden : isVisible, visible : isHidden}">
+      <section class="aboutme" id="aboutme">
+        <div class="aboutme__title">
+          <h1>
+            <div class="aboutme__title--special">
+              <span>H</span><span>e</span><span>l</span><span>l</span><span>o</span><span>,</span>
+            </div>
+            <div class="aboutme__title--special">
+              <span>m</span><span>y</span>
+            </div>
+            <div class="aboutme__title--special">
+              <span>n</span><span>a</span><span>m</span><span>e</span>
+            </div>
+            <div class="aboutme__title--special">
+              <span>i</span><span>s</span>
+            </div>
+          </h1>
+          <h2>Nicolò e sono un Junior Full Stack Web Developer.</h2>
+        </div>
+
+        <div class="aboutme__txt">
+          <p>
+            Interessato da sempre a tutto ciò che gravita attorno al mondo del
+            computer, ho deciso finalmente di seguire la mia passione ed
+            addentrarmi concretamente nel settore della programmazione
+            frequentando il corso
+            <a href="https://www.boolean.careers" target="_blank">Boolean Careers</a>
+            e rimanendone affascinato.<br />
+            I miei obiettivi a breve termine sono iniziare a lavorare nel
+            settore e formarmi ulteriormente, esplorando quelle tecnologie che
+            non ho ancora avuto modo di approfondire.
+          </p>
+        </div>
+        <div class="aboutme__icons">
+          <i class="fab fa-html5" title="HTML5"></i>
+          <i class="fab fa-css3-alt" title="CSS3"></i>
+          <i class="fab fa-js-square" title="JavaScript"></i>
+          <i class="fab fa-php" title="PHP"></i>
+          <i class="fab fa-laravel" title="Laravel"></i>
+          <i class="fab fa-sass" title="Sass"></i>
+          <i class="fab fa-bootstrap" title="Bootstrap"></i>
+          <i class="fab fa-vuejs" title="Vue.js"></i>
+          <i class="icon-mysql" title="MySQL"></i>
+          <i class="fab fa-github" title="GitHub"></i>
+          <i class="fab fa-gitkraken" title="GitKraken"></i>
+          <i class="fab fa-google-drive" title="Google Drive"></i>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="projects__box">
+          <img src="https://via.placeholder.com/280"></img>
+          <div class="hex">
+            <div class="hex1"></div>
+            <div class="hex2"><a href="">View project <i class="fab fa-github"></i></a></div>
+            <div class="hex3"></div>
+          </div>
+        </div>
+
+
+        <div class="projects__box">
+          <img src="https://via.placeholder.com/280"></img>
+          <div class="hex">
+            <div class="hex1"></div>
+            <div class="hex2"><a href="">View project <i class="fab fa-github"></i></a></div>
+            <div class="hex3"></div>
+          </div>
+        </div>
+
+        <div class="projects__box">
+          <img src="https://via.placeholder.com/280"></img>
+          <div class="hex">
+            <div class="hex1"></div>
+            <div class="hex2"><a href="">View project <i class="fab fa-github"></i></a></div>
+            <div class="hex3"></div>
+          </div>
+        </div>
+
+        <div class="projects__box">
+          <img src="https://via.placeholder.com/280"></img>
+          <div class="hex">
+            <div class="hex1"></div>
+            <div class="hex2"><a href="">View project <i class="fab fa-github"></i></a></div>
+            <div class="hex3"></div>
+          </div>
+        </div>
+
+        <div class="projects__box">
+          <img src="https://via.placeholder.com/280"></img>
+          <div class="hex">
+            <div class="hex1"></div>
+            <div class="hex2"><a href="">View project <i class="fab fa-github"></i></a></div>
+            <div class="hex3"></div>
+          </div>
+        </div>
+
+      </section>
+
+      <section>
+        <a href="mailto:nico.matassoli@gmail.com">Email</a>
+      </section>
+    </main>
+
+    <footer>
+    </footer>
+  </div>
+
+  <script src="js/myscript.js" charset="utf-8"></script>
+</body>
+
 </html>
