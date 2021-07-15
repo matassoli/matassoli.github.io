@@ -308,17 +308,13 @@ header ul li i {
   transform: scale(1.2);
 }
 
-.contacts {
-  padding: 100px;
-}
-
-footer .rotate {
+.contacts .rotate {
   transform: rotate(90deg);
   position: fixed;
   bottom: 25%;
   right: 0;
 }
-footer span::after {
+.contacts span::after {
   position: absolute;
   content: "";
   height: 2px;
