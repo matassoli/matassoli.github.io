@@ -1,0 +1,21 @@
+.contacts {
+  padding: 100px;
+}
+
+footer {
+  .rotate {
+    transform: rotate(90deg);
+    position: fixed;
+    bottom: 25%;
+    right: 0;
+  }
+  span::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: $primary;
+    width: 100px;
+    margin-left: 15px;
+    top: 50%;
+  }
+}

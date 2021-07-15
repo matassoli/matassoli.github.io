@@ -19,10 +19,6 @@ body {
   background-color: #17191d;
 }
 
-.wip {
-  margin-top: 150px;
-}
-
 @media only screen and (max-width: 1000px) {
   .container {
     width: 80%;
@@ -293,7 +289,8 @@ header ul li i {
   }
 }
 .aboutme__icons {
-  padding: 50px 0;
+  width: 90%;
+  padding-top: 50px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -311,35 +308,69 @@ header ul li i {
   transform: scale(1.2);
 }
 
+.contacts {
+  padding: 100px;
+}
+
+footer .rotate {
+  transform: rotate(90deg);
+  position: fixed;
+  bottom: 25%;
+  right: 0;
+}
+footer span::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #4703A6;
+  width: 100px;
+  margin-left: 15px;
+  top: 50%;
+}
+
 .projects {
   font-size: 0;
   text-align: center;
+  padding: 50px 0;
 }
 .projects h2 {
   margin: 30px 0;
-  font-size: 20px;
+  font-size: 40px;
+  text-align: left;
 }
 .projects__box {
-  font-size: 20px;
   display: inline-block;
   position: relative;
-  opacity: 0.8;
+  opacity: 0.5;
+  overflow: hidden;
+  margin: 2px;
 }
 .projects__box img {
   width: 280px;
   height: 280px;
-  margin: 5px;
+  transition: transform 0.2s;
 }
 .projects__box:hover {
   opacity: 1;
 }
+.projects__box:hover img {
+  transform: scale(1.2);
+}
+.projects__box:hover .hex {
+  visibility: visible;
+  transition: all 0.3s linear;
+  transform: scale(1);
+  opacity: 0.9;
+}
 .projects .hex {
+  font-size: 20px;
   position: absolute;
   z-index: 1;
   top: 50%;
   left: 50%;
   margin: -62px 0 0 -52px;
   visibility: hidden;
+  transition: all 0.1s linear;
   transform: scale(0.1);
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -350,24 +381,18 @@ header ul li i {
 .projects .hex i {
   margin-top: 5px;
 }
-.projects .projects__box:hover .hex {
-  visibility: visible;
-  transition: all 0.3s linear;
-  transform: scale(1);
-  opacity: 0.9;
-}
-.projects .hex1 {
+.projects .hex .hex1 {
   width: 0;
   border-bottom: 30px solid #4703A6;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
 }
-.projects .hex2 {
+.projects .hex .hex2 {
   width: 104px;
   height: 60px;
   background-color: #4703A6;
 }
-.projects .hex3 {
+.projects .hex .hex3 {
   width: 0;
   border-top: 30px solid #4703A6;
   border-left: 52px solid transparent;
