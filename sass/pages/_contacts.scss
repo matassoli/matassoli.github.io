@@ -1,18 +1,31 @@
 .contacts {
   // padding: 100px;
-  .rotate {
+  .rotate--dx {
     transform: rotate(90deg);
     position: fixed;
     bottom: 25%;
-    right: 0;
+    right: -45px;
+  }
+
+  .rotate--sx {
+    transform: rotate(90deg);
+    position: fixed;
+    bottom: 15%;
+    left: 30px;
+    i {
+      transform: rotate(270deg);
+      margin-left: 10px;
+      font-size: 20px;
+    }
   }
   span::after {
     position: absolute;
     content: "";
     height: 2px;
     background-color: $primary;
-    width: 100px;
+    width: 1000px;
     margin-left: 15px;
     top: 50%;
+    vertical-align: middle;
   }
 }
