@@ -203,6 +203,37 @@ header ul li i {
     transform: translateY(0px);
   }
 }
+.form {
+  text-align: center;
+}
+.form span {
+  color: #4703A6;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.2);
+  font-size: 20px;
+  display: block;
+  margin: 20px 0 5px;
+}
+.form input,
+.form textarea {
+  width: 50%;
+  margin: 5px;
+  background-color: #34383e;
+  border: none;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+.form__obj {
+  height: 50px;
+}
+.form__text {
+  height: 250px;
+  resize: none;
+  padding: 10px;
+}
+.form__button {
+  height: 80px;
+}
+
 .aboutme__title {
   margin: 150px 0 50px;
   width: 60%;

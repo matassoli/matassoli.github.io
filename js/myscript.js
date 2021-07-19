@@ -10,29 +10,26 @@ var mycomponent = new Vue({
     this.changeActive();
   },
   methods: {
-    changeActive: function() {
+    changeActive: function () {
       setInterval(() => {
         this.isVisible = false;
         this.isHidden = true;
       }, 5);
     },
-
-  }
-
+  },
 });
-
 
 const anim = anime.timeline({});
 anim
   .add({
-    targets: '#hexagon path',
+    targets: "#hexagon path",
     strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInOutQuint',
+    easing: "easeInOutQuint",
     duration: 1500,
   })
   .add({
-    targets: '#hexagon #M',
+    targets: "#hexagon #M",
     duration: 800,
     opacity: 1,
-    easing: 'easeInOutQuint',
+    easing: "easeInOutQuint",
   });
