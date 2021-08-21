@@ -14,7 +14,7 @@ var mycomponent = new Vue({
       setInterval(() => {
         this.isVisible = false;
         this.isHidden = true;
-      }, 5);
+      }, 2500);
     },
   },
 });
