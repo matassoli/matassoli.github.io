@@ -217,25 +217,55 @@ header ul li i {
     display: none;
   }
 }
+@media (min-width: 1001px) {
+  header li:last-child a {
+    display: none;
+  }
+}
 footer {
-  margin: auto;
+  position: relative;
   padding-bottom: 50px;
-  width: 80%;
 }
 footer .contacts__box {
+  background-color: #34383e;
+  width: 80%;
+  margin: auto;
   padding: 50px;
   border: 1px #4703A6 solid;
+  position: absolute;
+  bottom: -210%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 footer .contacts__box span {
   display: block;
   padding: 10px 0;
 }
-footer .contacts__box span i {
-  color: #4703A6;
-}
 footer .contacts__box span a {
-  color: #34383e;
-  text-shadow: 0.4px 0.4px #4703A6;
+  color: black;
+  text-shadow: 0.4px 0.4px black;
+  position: relative;
+}
+footer .contacts__box span a::after {
+  content: "";
+  background: rgba(71, 3, 166, 0.5);
+  position: absolute;
+  left: 12px;
+  bottom: -6px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  z-index: -1;
+  transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+}
+footer .contacts__box span a:hover:after {
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 100%;
+}
+footer .contacts__box i {
+  color: #4703A6;
+  text-shadow: 0.3px 0.3px black;
 }
 @media only screen and (min-width: 1001px) {
   footer {
@@ -283,6 +313,12 @@ footer .contacts__box span a {
 }
 .aboutme__txt a {
   color: #28a745;
+}
+@media (max-width: 768px) {
+  .aboutme__txt {
+    margin: auto;
+    width: 80%;
+  }
 }
 @-webkit-keyframes rubberBand {
   from {
