@@ -21,7 +21,7 @@ body {
 
 @media only screen and (max-width: 1000px) {
   .container {
-    width: 80%;
+    width: 90%;
   }
 
   .aboutme__icons::after {
@@ -39,6 +39,12 @@ body g {
 a {
   text-decoration: none;
   color: #EEEEEE;
+}
+
+h2 {
+  margin: 30px 0;
+  font-size: 40px;
+  text-align: left;
 }
 
 .logo__wrapper {
@@ -203,40 +209,48 @@ header ul li i {
     transform: translateY(0px);
   }
 }
-.form {
-  text-align: center;
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+  header ul {
+    display: none;
+  }
 }
-.form span {
-  color: #4703A6;
-  text-shadow: 0 1px rgba(255, 255, 255, 0.2);
-  font-size: 20px;
+footer {
+  margin: auto;
+  padding-bottom: 50px;
+  width: 80%;
+}
+footer .contacts__box {
+  padding: 50px;
+  border: 1px #4703A6 solid;
+}
+footer .contacts__box span {
   display: block;
-  margin: 20px 0 5px;
+  padding: 10px 0;
 }
-.form input,
-.form textarea {
-  width: 50%;
-  margin: 5px;
-  background-color: #34383e;
-  border: none;
-  border-radius: 20px;
-  padding-left: 10px;
+footer .contacts__box span i {
+  color: #4703A6;
 }
-.form__obj {
-  height: 50px;
+footer .contacts__box span a {
+  color: #34383e;
+  text-shadow: 0.4px 0.4px #4703A6;
 }
-.form__text {
-  height: 250px;
-  resize: none;
-  padding: 10px;
-}
-.form__button {
-  height: 80px;
+@media only screen and (min-width: 1001px) {
+  footer {
+    display: none;
+  }
 }
 
 .aboutme__title {
   margin: 150px 0 50px;
   width: 60%;
+}
+@media (max-width: 768px) {
+  .aboutme__title {
+    width: 80%;
+  }
 }
 .aboutme__title--special {
   display: inline;
@@ -245,12 +259,13 @@ header ul li i {
 .aboutme__title h1 {
   color: #4703A6;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 40px;
 }
 .aboutme__title h2 {
   font-size: 40px;
   font-weight: 400;
+  margin: 0;
 }
 .aboutme__title span {
   display: inline-block;
@@ -367,22 +382,27 @@ header ul li i {
   vertical-align: middle;
 }
 
+@media (max-width: 1000px) {
+  .contacts {
+    display: none;
+  }
+}
 .projects {
   font-size: 0;
   text-align: center;
   padding: 50px 0;
-}
-.projects h2 {
-  margin: 30px 0;
-  font-size: 40px;
-  text-align: left;
 }
 .projects__box {
   display: inline-block;
   position: relative;
   opacity: 0.5;
   overflow: hidden;
-  margin: 2px;
+  margin: 3px;
+}
+@media (max-width: 768px) {
+  .projects__box {
+    margin: 8px;
+  }
 }
 .projects__box img {
   width: 280px;

@@ -48,7 +48,7 @@
         <li><a href="">Home</a></li>
         <li><a href="#aboutme">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contacts">Contacts</a></li>
+        <!-- <li><a href="#contacts">Contacts</a></li> -->
       </ul>
     </header>
     <main class="container" v-bind:class="{hidden : isVisible, visible : isHidden}">
@@ -68,20 +68,16 @@
               <span>i</span><span>s</span>
             </div>
           </h1>
-          <h2>Nicolò e sono un Junior Full Stack Web Developer.</h2>
+          <h2>Nicolò e sono uno Junior Full Stack Web Developer.</h2>
         </div>
 
         <div class="aboutme__txt">
           <p>
-            Interessato da sempre a tutto ciò che gravita attorno al mondo del
-            computer, ho deciso finalmente di seguire la mia passione ed
-            addentrarmi concretamente nel settore della programmazione
-            frequentando il corso
-            <a href="https://www.boolean.careers" target="_blank">Boolean Careers</a>
-            e rimanendone affascinato.<br />
-            I miei obiettivi a breve termine sono iniziare a lavorare nel
-            settore e formarmi ulteriormente, esplorando quelle tecnologie che
-            non ho ancora avuto modo di approfondire.
+            Interessato da sempre a tutto ciò che gravita attorno al mondo del computer, ho deciso finalmente di seguire
+            la mia passione ed addentrarmi concretamente nel settore della programmazione frequentando il corso <a
+              href="https://www.boolean.careers" target="_blank">Boolean Careers</a> e rimanendone affascinato.<br />
+            I miei obiettivi a breve termine sono iniziare a lavorare nel settore e formarmi ulteriormente, esplorando
+            quelle tecnologie che non ho ancora avuto modo di approfondire.
           </p>
         </div>
         <div class="aboutme__icons">
@@ -93,6 +89,7 @@
           <i class="fab fa-sass" title="Sass"></i>
           <i class="fab fa-bootstrap" title="Bootstrap"></i>
           <i class="fab fa-vuejs" title="Vue.js"></i>
+          <i class="fab fa-react" title="React"></i>
           <i class="icon-mysql" title="MySQL"></i>
           <i class="fab fa-github" title="GitHub"></i>
           <i class="fab fa-gitkraken" title="GitKraken"></i>
@@ -174,19 +171,32 @@
         </div>
       </section>
 
-      <footer>
-        <form class="form" method="GET" action="mailto:nico.matassoli@gmail.com" enctype="text/plain">
+      <footer id="contacts">
+        <h2>Contacts</h2>
+        <div class="contacts__box">
+          <span>
+            <i class="far fa-envelope"></i> Email:
+            <a href="mailto:nico.matassoli@gmail.com">nico.matassoli@gmail.com</a>
+          </span>
 
 
-          <span>Oggetto</span>
-          <input class="form__obj" type="text" name="subject">
-          <br>
-          <span>Message</span>
-          <textarea name="body" class="form__text"></textarea>
-          <br>
-          <input class="form__button" type="submit" value="Invia Email">
+          <span>
+            <i class="fab fa-linkedin-in"></i> Linkedin:
+            <a href="https://www.linkedin.com/in/matassoli/">linkedin.com/in/matassoli</a>
+          </span>
 
-        </form>
+
+          <span>
+            <i class="fab fa-github"></i> Github:
+            <a href="https://github.com/matassoli">github.com/matassoli</a>
+          </span>
+
+        </div>
+
+
+
+
+
       </footer>
 
     </main>

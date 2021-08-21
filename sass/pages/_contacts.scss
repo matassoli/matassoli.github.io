@@ -1,5 +1,4 @@
 .contacts {
-  // padding: 100px;
   .rotate--dx {
     transform: rotate(90deg);
     position: fixed;
@@ -27,5 +26,11 @@
     margin-left: 15px;
     top: 50%;
     vertical-align: middle;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contacts {
+    display: none;
   }
 }

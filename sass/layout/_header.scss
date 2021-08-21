@@ -89,3 +89,12 @@ header {
     transform: translateY(0px);
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+    ul {
+      display: none;
+    }
+  }
+}

@@ -2,6 +2,9 @@
   &__title {
     margin: 150px 0 50px;
     width: 60%;
+    @media (max-width: 768px) {
+      width: 80%;
+    }
 
     &--special {
       display: inline;
@@ -11,13 +14,14 @@
     h1 {
       color: $primary;
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
       font-size: 40px;
     }
 
     h2 {
       font-size: 40px;
       font-weight: 400;
+      margin: 0;
     }
 
     span {
