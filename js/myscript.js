@@ -5,6 +5,38 @@ var mycomponent = new Vue({
   data: {
     isVisible: true,
     isHidden: false,
+    projects: [
+      {
+        name: "Whatsapp",
+        img: "whatsapp.png",
+        url: "vue-boolzapp",
+      },
+      {
+        name: "Spotify",
+        img: "spoty.png",
+        url: "html-css-spotifyweb",
+      },
+      {
+        name: "Filters",
+        img: "spotyfilter.png",
+        url: "vue-dischi",
+      },
+      {
+        name: "Digital Ocean",
+        img: "digitalocean.png",
+        url: "html-css-digitalocean",
+      },
+      {
+        name: "Landrick",
+        img: "landrick.png",
+        url: "proj-html-vuejs",
+      },
+      {
+        name: "Booldoctors",
+        img: "booldoctors.png",
+        url: "booldoctors",
+      },
+    ],
   },
   mounted() {
     this.changeActive();
